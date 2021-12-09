@@ -86,10 +86,10 @@ const Checkout = props => {
 				{!formInputsValidity.postalCode && <p>Please enter a valid postal code!</p>}
 			</div>
 			<div className={classes.actions}>
-				<button type='button' onClick={props.onCancel}>
+				<button type='button' onClick={props.onClose}>
 					Cancel
 				</button>
-				<button className={classes.button}>Confirm</button>
+				<button className={classes.submit}>Confirm</button>
 			</div>
 		</form>
 	);

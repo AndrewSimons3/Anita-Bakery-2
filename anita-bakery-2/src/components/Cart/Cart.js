@@ -85,7 +85,7 @@ const Cart = props => {
         <span>{totalAmount}</span>
       </div>
       {isCheckout && (
-        <Checkout onConfirm={submitOrderHandler} />
+        <Checkout onConfirm={submitOrderHandler} onClose={props.onClose}/>
       )}
       {!isCheckout && modalActions}
     </React.Fragment>
