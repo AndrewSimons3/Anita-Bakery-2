@@ -1,51 +1,66 @@
-import { useEffect, useState } from 'react';
 import classes from './AvailableGoods.module.css'
 import Card from '../UI/Card';
 import GoodItem from './GoodItem/GoodItem';
+import { useState, useEffect } from 'react';
 
 
 
 const AvailableGoods = () => {
   const [goods, setGoods] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [httpError, setHttpError] = useState();
 
   useEffect(() => {
-		const fetchGoods = async () => {
-			const response = await fetch(
-				'https://react-http-516cc-default-rtdb.firebaseio.com/goods.json'
-			);
+    const fetchGoods = async () => {
+      const response = await fetch('https://react-http-516cc-default-rtdb.firebaseio.com/goods.json');
 
-			const responseData = await response.json();
+      if (!response.ok) {
+        throw new Error('Something went wrong!')
+      }
 
-			const loadedGoods = [];
+      const responseData = await response.json();
 
-			for (const key in responseData) {
-				loadedGoods.push({
-					id: key,
+      const loadedGoods = [];
+
+      for (const key in responseData) {
+        loadedGoods.push({
 					name: responseData[key].name,
 					description: responseData[key].description,
 					price: responseData[key].price,
 				});
-      }
-      
+      };
       setGoods(loadedGoods);
+      setIsLoading(false);
     }
-    fetchGoods();
-  }, []);
-  
-    const goodsList = goods.map((good) => (
-			<GoodItem
-				id={good.id}
-				key={good.id}
-				name={good.name}
-				description={good.description}
-				price={good.price}
-			/>
-		));
+    fetchGoods().catch((error) => {
+      setIsLoading(false);
+      setHttpError(error.message);
+    })
+  });
+
+  if (httpError) {
+    return (
+      <section className={classes.GoodsError}>
+        {httpError}
+      </section>
+    )
+  }
+ 
+
+  const goodsList = goods.map((good) =>  (
+    <GoodItem 
+      id={good.id}
+      key={good.id} 
+      name={good.name} 
+      description={good.description} 
+      price={good.price}
+      />
+  ));
 
   return (
     <section className={classes.goods}>
       <Card>
-        <ul>{goodsList}</ul>
+        <ul>{!isLoading && goodsList}</ul>
       </Card>
     </section>
   );

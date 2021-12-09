@@ -11,6 +11,11 @@
   padding: 0;
 }
 
+.GoodsError {
+  color: red;
+  text-align: center;
+}
+
 @keyframes goods-appear {
   from {
     opacity: 0;
