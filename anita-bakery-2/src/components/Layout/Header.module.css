@@ -1,18 +1,13 @@
+.font-link {
+  
+}
+
 .header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 5rem;
-  background-color: #5f3dc4;
-  color: #fff;
+  font-family: 'Roboto';
+  font-weight: 400;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding: 0 10%; */
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.65);
-  z-index: 10;
-  border-radius: 0 0 10px 10px
 }
 
 .title {
@@ -28,12 +23,24 @@
 
 .navListItems {
   margin-right: 2rem;
-  font-size: 1.6rem;
-  font-weight: 700;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #9775fa;
 }
 
-.navListItems:hover {
-  color: #000;
+.navListItems:hover,
+.navListItems:active {
+  color: #845ef7;
+  cursor: pointer;
+  transition: all .4s ease;
+  -webkit-transition: all .4s ease;
+}
+
+.cupcake {
+  height: 60px;
+  width: 60px;
+  color: white;
+  padding-left: 20px
 }
 
 /* .main-image {

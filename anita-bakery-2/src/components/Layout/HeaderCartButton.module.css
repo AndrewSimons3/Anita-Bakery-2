@@ -16,6 +16,8 @@
 .button:hover,
 .button:active {
   background-color: #845ef7;
+   transition: all .4s ease;
+  -webkit-transition: all .4s ease;
 }
 
 .icon {

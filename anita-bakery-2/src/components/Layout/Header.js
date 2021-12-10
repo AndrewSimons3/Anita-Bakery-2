@@ -1,4 +1,5 @@
 import { Fragment } from 'react';
+import cupcake from '../../assets/cupcake.png'
 
 // import anitaImage from '../../assets/cookies.jpg';
 import classes from './Header.module.css';
@@ -7,7 +8,8 @@ import HeaderCartButton from './HeaderCartButton';
 const Header = props => {
   return <Fragment>
     <header className={classes.header}>
-      <h1 className={classes.title}>Anita's Bakery</h1>
+      <img className={classes.cupcake} src={cupcake} alt="cupcake" />
+      {/* <h1 className={classes.title}></h1> */}
 
       <nav className={classes.nav}>
         <ul className={classes.navList}>
