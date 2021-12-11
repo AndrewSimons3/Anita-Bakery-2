@@ -1,10 +1,24 @@
 import classes from './Intro.module.css';
-import background from '../images/mac.jpg'
+import { Fragment } from 'react';
 
 const Intro = () => {
   return (
-    <img src={background} className={classes.background} />
-  )
+		<Fragment>
+			<section className={['section-hero']}>
+				<div className={classes.bg}>
+					<div className={classes['hero-left']}>
+						<h1 className={classes.title}>Anita's</h1>
+						<h1 className={classes.title}>Bakery</h1>
+
+						<button className={classes.button}>Shop Now</button>
+					</div>
+					<div className={classes['hero-right']}>
+						<div>yooooooo</div>
+					</div>
+				</div>
+			</section>
+		</Fragment>
+	);
 };
 
 export default Intro;

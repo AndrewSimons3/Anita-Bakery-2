@@ -1,6 +1,6 @@
 import { Fragment } from 'react';
 import classes from './Main.module.css';
-import shop from '../images/shop.jpg';
+
 import store from '../../assets/shop.webp';
 
 const Main = () => {
