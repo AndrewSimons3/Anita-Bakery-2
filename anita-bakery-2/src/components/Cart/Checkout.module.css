@@ -29,6 +29,7 @@
 }
 
 .actions button {
+  background-color: white;
   font: inherit;
   color: #9775fa;
   cursor: pointer;

@@ -26,6 +26,7 @@
   align-items: center;
   justify-content: center;
   list-style-type: none;
+  margin-right: 2rem;
 }
 
 .navListItems {
