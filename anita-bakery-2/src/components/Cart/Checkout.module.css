@@ -1,16 +1,16 @@
 .form {
   margin: 1rem 0;
-  height: 19rem;
+  height: 14rem;
   overflow: auto;
 }
 
 .control {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
 }
 
 .control label {
   font-weight: bold;
-  margin-bottom: 0.25rem;
+  /* margin-bottom: 0.25rem; */
   display: block;
 }
 
@@ -30,28 +30,35 @@
 
 .actions button {
   font: inherit;
-  color: #5a1a01;
+  color: #9775fa;
   cursor: pointer;
-  background-color: transparent;
-  border: none;
+  border: 1px solid #9775fa;
   border-radius: 25px;
   padding: 0.5rem 2rem; 
+  
 }
 
 .actions button:hover,
 .actions button:active {
-  background-color: #ffe6dc;
+   background-color: #5f3dc4;
+ border-color: #9775fa;
+  color: white;
+    transition: all .4s ease;
+  -webkit-transition: all .4s ease;
 }
 
 .actions .submit {
-  border: 1px solid #5a1a01;
-  background-color: #5a1a01;
+  border: 1px solid #9775fa;
+  background-color: #9775fa;
   color: white;
+  
 }
 
 .actions .submit:hover,
 .actions .submit:active {
-  background-color: #7a2706;
+  background-color: #5f3dc4;
+    transition: all .4s ease;
+  -webkit-transition: all .4s ease;
 }
 
 .invalid label {

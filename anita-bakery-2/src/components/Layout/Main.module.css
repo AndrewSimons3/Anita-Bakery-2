@@ -64,7 +64,7 @@ body {
 
 .button:hover,
 .button:active {
-  background-color: #845ef7;
+  background-color: #5f3dc4;
    transition: all .4s ease;
   -webkit-transition: all .4s ease;
 }
