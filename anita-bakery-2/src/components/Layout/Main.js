@@ -8,9 +8,8 @@ const Main = () => {
 		<Fragment>
 			<section className={classes['section-hero']}>
 				<div className={classes['hero-left']}>
-					<h1 className={classes.title}>Anita's</h1>
-					<h1 className={classes.title}>Bakery</h1>
-					<h2 className={classes.summary}>
+					<h1 className={classes.title}>About Us</h1>
+					<h2 className={classes.summary}> Founded in 2017, we pride ourselves on making completely organic and all natural baking goods for any occasion.
 						All of our goods are cooked with high-quality ingredients, by our
 						experienced baker Anita!
           </h2>

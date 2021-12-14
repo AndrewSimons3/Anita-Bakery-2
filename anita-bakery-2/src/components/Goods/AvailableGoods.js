@@ -19,6 +19,7 @@ const AvailableGoods = () => {
       }
 
       const responseData = await response.json();
+      console.log(responseData)
 
       const loadedGoods = [];
 
@@ -30,6 +31,7 @@ const AvailableGoods = () => {
 					price: responseData[key].price,
 				});
       };
+      console.log(loadedGoods);
       setGoods(loadedGoods);
       setIsLoading(false);
     }
