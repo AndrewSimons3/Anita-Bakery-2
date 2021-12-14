@@ -4,7 +4,7 @@ import Goods from './components/Goods/Goods';
 import Cart from './components/Cart/Cart';
 import CartProvider from './store/CartProvider';
 import Main from './components/Layout/Main';
-import Intro from './components/Layout/Intro';
+import About from './components/Layout/About';
 // import { Fragment } from 'react';
 
 
@@ -24,8 +24,8 @@ function App() {
    <CartProvider>
      {cartIsShown && <Cart onClose={hideCartHandler} />}
       <Header onShowCart={showCartHandler} />
-      <Intro />
-     <Main />
+      <Main />
+      <About />
       <Goods />
    </CartProvider>
   );

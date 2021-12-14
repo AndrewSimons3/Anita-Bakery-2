@@ -1,8 +1,8 @@
-import classes from './GoodsSummary.module.css';
+// import classes from './GoodsSummary.module.css';
 
 const GoodsSummary = () => {
 	return (
-    <div>Our Menu</div>
+    <div id="menu">Our Menu</div>
 	);
 };
 
