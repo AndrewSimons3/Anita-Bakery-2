@@ -5,6 +5,7 @@ import Cart from './components/Cart/Cart';
 import CartProvider from './store/CartProvider';
 import Main from './components/Layout/Main';
 import About from './components/Layout/About';
+import Gallery from './components/Layout/Gallery'
 // import { Fragment } from 'react';
 
 
@@ -26,6 +27,7 @@ function App() {
       <Header onShowCart={showCartHandler} />
       <Main />
       <About />
+      <Gallery />
       <Goods />
    </CartProvider>
   );

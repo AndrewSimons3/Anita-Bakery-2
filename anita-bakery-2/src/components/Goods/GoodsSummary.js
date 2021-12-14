@@ -1,8 +1,12 @@
-// import classes from './GoodsSummary.module.css';
+import classes from './GoodsSummary.module.css';
 
 const GoodsSummary = () => {
 	return (
-    <div id="menu">Our Menu</div>
+		<div className={classes['menu-container']}>
+			<div id='menu' className={classes['menu-title']}>
+				Our Menu
+			</div>
+		</div>
 	);
 };
 

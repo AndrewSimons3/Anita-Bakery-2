@@ -23,7 +23,7 @@ const Main = (props) => {
 						className={classes.button}
 						activeClass='active'
 						type='submit'
-						value='Shop Now'
+						value='Order Now'
 						to='menu'
 						spy={true}
 						smooth={true}

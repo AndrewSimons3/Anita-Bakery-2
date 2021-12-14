@@ -1,0 +1,12 @@
+.menu-title {
+  font-size: 92px;
+  margin:0;
+  font-weight: 300;
+  color: #200d5a;
+}
+
+.menu-container {
+  display: flex;
+  justify-content: center;
+  
+}
