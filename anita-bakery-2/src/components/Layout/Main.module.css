@@ -11,8 +11,8 @@ body {
 .bg {
 	height: 100vh;
 	background-image: linear-gradient(
-			rgba(255, 255, 255, 0.3),
-			rgba(255, 255, 255, 0.3)
+			rgba(255, 255, 255, 0.5),
+			rgba(255, 255, 255, 0.5)
 		),
 		url('../images/mac.jpg');
 	background-size: cover;
@@ -28,6 +28,10 @@ body {
 	margin: 0;
 	color: #200d5a;
 	text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0, 0, 0, 0.15);
+}
+
+#anitaTitle {
+	margin-top: -15px;
 }
 
 h1 {

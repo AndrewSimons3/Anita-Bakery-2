@@ -9,7 +9,7 @@ const Intro = () => {
 				<div className={classes.bg}>
 					<div className={classes['hero-left']}>
 						<h1 className={classes.title}>Anita's</h1>
-						<h1 className={classes.title}>Bakery</h1>
+						<h1 className={classes.title} id={classes.anitaTitle}>Bakery</h1>
 						{/* <button className={classes.button}>Shop Now</button> */}
 						<Button
 							className={classes.button}

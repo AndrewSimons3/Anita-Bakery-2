@@ -12,41 +12,14 @@ import eight from '../images/image8.jpg';
 const Gallery = () => {
 	return (
 		<div className={classes['gallery-wrapper']}>
-			<div className={classes.row}>
-				<div className={classes.column}>
-					<div className={classes.imageContainer}>
-						<img className={classes.one} src={one} alt='' />
-					</div>
-					<div className={classes.imageContainer}>
-						<img src={two} alt='' />
-					</div>
-
-					<div className={classes.imageContainer}>
-						<img src={three} alt='' />
-					</div>
-
-					<div className={classes.imageContainer}>
-						<img src={four} alt='' />
-					</div>
-				</div>
-				<div className={classes.column}>
-					<div className={classes.imageContainer}>
-						<img src={five} alt='' />
-					</div>
-
-					<div className={classes.imageContainer}>
-						<img src={six} alt='' />
-					</div>
-
-					<div className={classes.imageContainer}>
-						<img src={seven} alt='' />
-					</div>
-
-					<div className={classes.imageContainer}>
-						<img src={eight} alt='' />
-					</div>
-				</div>
-			</div>
+      <img className={classes.one}src={one} alt='' />
+			<img src={two} alt='' />
+			<img src={three} alt='' />
+			<img src={four} alt='' />
+			<img src={five} alt='' />
+			<img src={six} alt='' />
+			<img src={seven} alt='' />
+			<img src={eight} alt='' />
 		</div>
 	);
 };
