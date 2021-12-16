@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React, { useState, useContext, Fragment } from 'react';
 
 import classes from './Cart.module.css';
 import Modal from '../UI/Modal';
@@ -73,7 +73,7 @@ const Cart = (props) => {
 	);
 
 	const cartModalContent = (
-		<React.Fragment>
+		<Fragment>
 			{cartItems}
 			<div className={classes.total}>
 				<span>Total Amount</span>
@@ -83,20 +83,20 @@ const Cart = (props) => {
 				<Checkout onConfirm={submitOrderHandler} onClose={props.onClose} />
 			)}
 			{!isCheckout && modalActions}
-		</React.Fragment>
+		</Fragment>
 	);
 
 	const isSubmittingModalContent = <p>Sending order data...</p>;
 
 	const didSubmitModalContent = (
-		<React.Fragment>
+		<Fragment>
 			<p>Successfully sent the order!</p>
 			<div className={classes.actions}>
 				<button className={classes.button} onClick={props.onClose}>
 					Close
 				</button>
 			</div>
-		</React.Fragment>
+		</Fragment>
 	);
 
 	return (
