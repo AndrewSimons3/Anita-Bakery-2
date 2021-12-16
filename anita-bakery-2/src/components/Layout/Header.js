@@ -45,9 +45,6 @@ const Header = props => {
 						>
 							Menu
 						</Link>
-						{/* <li className={classes.navListItems}>Home</li> */}
-						{/* <li className={classes.navListItems}>About</li>
-						<li className={classes.navListItems}>Menu</li> */}
 						<li>
 							<HeaderCartButton onClick={props.onShowCart} />
 						</li>

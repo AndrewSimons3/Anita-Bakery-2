@@ -55,7 +55,6 @@ const Checkout = props => {
     });
   };
 
-
   const nameControlClasses = `${classes.control} ${formInputsValidity.name ? '' : classes.invalid}`;
   const streetControlClasses = `${classes.control} ${formInputsValidity.street ? '' : classes.invalid}`;
   const cityControlClasses = `${classes.control} ${formInputsValidity.city ? '' : classes.invalid}`;

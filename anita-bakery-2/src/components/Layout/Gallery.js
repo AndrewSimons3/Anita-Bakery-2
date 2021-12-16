@@ -12,14 +12,30 @@ import eight from '../images/image8.jpg';
 const Gallery = () => {
 	return (
 		<div className={classes['gallery-wrapper']}>
-      <img className={classes.one}src={one} alt='' />
-			<img src={two} alt='' />
-			<img src={three} alt='' />
-			<img src={four} alt='' />
-			<img src={five} alt='' />
-			<img src={six} alt='' />
-			<img src={seven} alt='' />
-			<img src={eight} alt='' />
+			<figure>
+				<img src={one} alt='' />
+			</figure>
+			<figure>
+				<img src={two} alt='' />
+			</figure>
+			<figure>
+				<img src={three} alt='' />
+			</figure>
+			<figure>
+				<img src={four} alt='' />
+			</figure>
+			<figure>
+				<img src={five} alt='' />
+			</figure>
+			<figure>
+				<img src={six} alt='' />
+			</figure>
+			<figure>
+				<img src={seven} alt='' />
+			</figure>
+			<figure>
+				<img src={eight} alt='' />
+			</figure>
 		</div>
 	);
 };

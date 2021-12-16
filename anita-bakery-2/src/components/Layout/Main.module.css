@@ -40,6 +40,12 @@ h1 {
 	animation-fill-mode: forwards;
 }
 
+.summary {
+	animation: fadeInAnimation ease 3s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
 .button {
 	animation: fadeInAnimation ease 3s;
 	animation-iteration-count: 1;
@@ -75,6 +81,8 @@ h1 {
 .summary {
 	font-weight: 300;
 	margin-bottom: 32px;
+	font-size: 32px;
+	color: #200d5a;
 }
 
 .button {
