@@ -5,9 +5,9 @@ import { Button } from 'react-scroll';
 const Intro = () => {
 	return (
 		<Fragment>
-			<section id='main' className={['section-hero']}>
+			<section id='main' className={classes['section-hero']}>
 				<div className={classes.bg}>
-					<div className={classes['hero-left']}>
+					<div className={classes['section-container']}>
 						<h1 className={classes.title}>Anita's</h1>
 						<h1 className={classes.title} id={classes.anitaTitle}>Bakery</h1>
 						<h2 className={classes.summary}>Fresh baked goods served fresh daily!</h2>

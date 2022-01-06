@@ -10,7 +10,6 @@
   align-items: center;
   border-radius: 25px;
   font-weight: bold;
-  margin-right: 5%;
 }
 
 .button:hover,
@@ -58,5 +57,18 @@
   }
   100% {
     transform: scale(1);
+  }
+}
+
+@media (max-width: 768px) {
+  .button {
+    padding: 0.5rem 1rem;
+  }
+  .cartTitle {
+    display: none;
+  }
+
+  .badge {
+    margin: 0;
   }
 }

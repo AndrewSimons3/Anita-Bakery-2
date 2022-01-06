@@ -1,15 +1,15 @@
 body {
-	height: 100%;
 	margin: 0;
 }
 
 .section-hero {
 	position: relative;
 	z-index: 1;
+	height: 100%;
+	width: 100%;
 }
 
 .bg {
-	height: 100vh;
 	background-image: linear-gradient(
 			rgba(255, 255, 255, 0.5),
 			rgba(255, 255, 255, 0.5)
@@ -17,7 +17,7 @@ body {
 		url('../images/mac.jpg');
 	background-size: cover;
 	height: 100vh;
-	width: 100%;
+	max-width: 100%;
 	display: flex;
 	flex-direction: row;
 	z-index: -1;
@@ -28,10 +28,6 @@ body {
 	margin: 0;
 	color: #200d5a;
 	text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0, 0, 0, 0.15);
-}
-
-#anitaTitle {
-	margin-top: -15px;
 }
 
 h1 {
@@ -61,21 +57,32 @@ h1 {
 	}
 }
 
-.hero-left {
-	/* width: 50%; */
-	align-items: left;
+.section-container {
+	width: 100%;
 	display: flex;
-	justify-content: center;
 	flex-direction: column;
-	padding: 2.5rem;
-	margin-left: 10rem;
+	align-items: flex-start;
+	justify-content: center;
+	padding-left: 7.5rem;
 }
 
-.hero-right {
-	width: 50%;
-	align-items: center;
-	display: flex;
-	justify-content: center;
+@media (max-width: 768px) {
+	.section-container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0;
+	}
+
+	.title {
+		font-size: 48px;
+	}
+
+	.summary {
+		text-align: center;
+		padding: 0 20px;
+	}
+	
 }
 
 .summary {
