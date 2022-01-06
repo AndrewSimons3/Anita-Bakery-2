@@ -28,6 +28,13 @@
   }
 }
 
+@media (max-width: 768px) {
+  .modal {
+    left: 20px;
+    width: 80%;
+  }
+}
+
 @keyframes slide-down {
   from {
     opacity: 0;

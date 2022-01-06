@@ -19,12 +19,12 @@ const GoodItem = props => {
 
   return ( 
     <li className={classes.good}>
-      <div>
+      <div className={classes.left}>
         <h3>{props.name}</h3>
         <div className={classes.description}>{props.description}</div>
         <div className={classes.price}>{price}</div>
       </div>
-      <div>
+      <div className={classes.right}>
       <GoodItemForm id={props.id} onAddToCart={addToCartHandler} />
       </div>
     </li>

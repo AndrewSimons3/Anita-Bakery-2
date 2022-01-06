@@ -20,3 +20,13 @@
   color: #7950f2;
   font-size: 1.25rem;
 }
+
+@media (max-width: 768px) {
+  .left {
+    margin-right: .5rem;
+  }
+
+  .right {
+    margin-left: .5rem;
+  }
+}
